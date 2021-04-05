@@ -1,0 +1,124 @@
+---
+title: "Exercício 3 - Xaringan"
+subtitle: "⚔<br/> Resolução"
+author: "Maykon Gabriel"
+institute: "Aluno - Curso R"
+date: "`r Sys.Date()`"
+output:
+  xaringan::moon_reader:
+    chakra: libs/remark-latest.min.js
+    lib_dir: libs
+    css: [default, rladies, rladies-fonts]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_duo_accent(
+  primary_color = "#FFAEBC",
+  secondary_color = "#A0E7E5",
+  inverse_header_color = "#e91e63",
+  title_slide_text_color = "#167ac6"
+)
+
+#::summon_remark()
+
+# para visualizar os tema disponíveis
+# names(xaringan:::list_css())
+```
+
+
+# Meu título de slide
+
+Incremental
+
+--
+Slide.
+
+--
+Teste.
+
+
+---
+
+# Tabela
+
+
+```{r echo=FALSE, message=FALSE, warning=FALSE}
+library(magrittr, include.only = "%>%")
+
+head(mtcars) %>% 
+  dplyr::select(mpg) %>% 
+  knitr::kable(format = "html") 
+
+```
+
+
+
+
+
+---
+# Imagens
+
+### Imagem 1 - Pasta imagem
+```{r echo=FALSE, fig.align='center', out.width="30%"}
+knitr::include_graphics("./imagem_teste.jpg")
+```
+
+
+
+
+### Imagem 2 - Link
+```{r echo=FALSE, fig.align='center', out.width="20%"}
+knitr::include_graphics("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
+```
+
+
+
+---
+# Códigos
+### Código chunk
+
+```{r}
+x <- 4
+y <- 6
+
+soma <- x + y
+
+print(soma)
+
+```
+
+
+---
+# Extensões
+
+###  Panelset
+
+```{r xaringan-panelset, echo=FALSE}
+xaringanExtra::use_panelset()
+
+```
+
+.panelset[
+.panel[.panel-name[R Code]
+
+
+```{r mass-flipper, warning = FALSE, message = FALSE}
+print("teste")
+```
+]
+
+.panel[.panel-name[Plot]
+
+```{r echo=TRUE, message=FALSE, warning=FALSE, out.width='75%', fig.height=3.5, fig.width=8, fig.retina=2, fig.align='center'}
+print("painel_2")
+```
+
+]
+]
+
+

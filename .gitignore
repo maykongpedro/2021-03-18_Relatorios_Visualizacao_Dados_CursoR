@@ -1,0 +1,16 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+*.html
+*.html
+*.pdf
+*.docx
+*.pptx
+*.shp
+*.dbf
+*.shx
+*.cst
+*.prj
+*.zip
+*.rds

@@ -1,0 +1,34 @@
+---
+title: "Presentation Ninja"
+subtitle: "⚔<br/>with xaringan"
+author: "Yihui Xie"
+institute: "RStudio, PBC"
+date: "2016/12/12 (updated: `r Sys.Date()`)"
+output:
+  xaringan::moon_reader:
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+class: center, middle
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+```
+
+
+# Meu slide
+
+![](https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif)
+
+---
+
+## Meu segundo slide
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif")
+
+```
+
