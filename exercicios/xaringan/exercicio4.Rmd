@@ -18,12 +18,16 @@ options(htmltools.dir.version = FALSE)
 
 ```{r xaringan-themer, include=FALSE, warning=FALSE}
 library(xaringanthemer)
-style_mono_accent(
-  base_color = "#1c5253",
-  header_font_google = google_font("Josefin Sans"),
-  text_font_google   = google_font("Montserrat", "300", "300i"),
-  code_font_google   = google_font("Fira Mono")
-)
+# style_mono_accent(
+#   # muda principalmente a cor da tela inicial, títulos e locais onde a cor primária é solicitada
+#   #base_color = "#1c5253",
+#   base_color = "#615006",
+# 
+#   
+#   header_font_google = google_font("Josefin Sans"),
+#   text_font_google   = google_font("Montserrat", "300", "300i"),
+#   code_font_google   = google_font("Fira Mono")
+# )
 ```
 
 ## Meu Slide!!
